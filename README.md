@@ -1,49 +1,60 @@
-﻿# LingoBreeze 📚
+<div align="center">
 
-A vocabulary learning app built with Flutter, Node.js, and Firebase. Users can save vocabulary words they want to learn and view them in a clean, modern list.
+<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
+
+# 📚 LingoBreeze
+
+**A vocabulary learning app to save and review words you want to learn.**
+
+</div>
+
+---
+
+## ✨ Features
+
+- 📝 Add new words with meaning and translation
+- 📖 View all saved words in a clean modern list
+- ⏳ Loading, empty, and error states handled
+- 🔄 Pull to refresh
+- 🪟 Modal bottom sheet for adding words
+- ☁️ Firebase Firestore for cloud storage
 
 ---
 
-## Features
+## 🛠️ Tech Stack
 
-- Add new words with meaning and translation
-- View all saved words
-- Loading, empty, and error states
-- Pull to refresh
-- Modal bottom sheet for adding words
-- Firebase Firestore for storage
+| Layer | Technology |
+|-------|------------|
+| 📱 Frontend | Flutter |
+| 🔄 State Management | Provider |
+| ⚙️ Backend | Node.js + Express |
+| 🗄️ Database | Firebase Firestore |
+| 🏗️ Architecture | Clean Architecture |
 
 ---
-## Screenshots
+
+## 📸 Screenshots
 
 <table>
+  <tr>
+    <td align="center"><b>Vocabulary List</b></td>
+    <td align="center"><b>Add New Word</b></td>
+    <td align="center"><b>Word Saved</b></td>
+    <td align="center"><b>Updated List</b></td>
+  </tr>
   <tr>
     <td><img src="preview/1.jpg" width="200"/></td>
     <td><img src="preview/2.jpg" width="200"/></td>
     <td><img src="preview/3.jpg" width="200"/></td>
     <td><img src="preview/4.jpg" width="200"/></td>
   </tr>
-  <tr>
-    <td align="center">Vocabulary List</td>
-    <td align="center">Add New Word</td>
-    <td align="center">Word Saved</td>
-    <td align="center">Updated List</td>
-  </tr>
 </table>
-
-## Tech Stack
-
-| Layer | Technology |
-|-------|------------|
-| Frontend | Flutter |
-| State Management | Provider |
-| Backend | Node.js + Express |
-| Database | Firebase Firestore |
-| Architecture | Clean Architecture |
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 lingbreeze/
@@ -77,9 +88,8 @@ lingbreeze/
 ```
 
 ---
----
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -89,35 +99,31 @@ lingbreeze/
 
 ---
 
-### Backend Setup
+### ⚙️ Backend Setup
 
 ```bash
 cd backend
 npm install
 ```
 
-Add `serviceAccountKey.json` file in the `backend/` folder:
-- Go to Firebase Console
-- Project Settings → Service Accounts
-- Click "Generate new private key"
-- Save the downloaded file as `serviceAccountKey.json` inside `backend/`
-
-Start the server:
+> Add `serviceAccountKey.json` in the `backend/` folder:
+> - Firebase Console → Project Settings → Service Accounts
+> - Click **"Generate new private key"**
+> - Save as `serviceAccountKey.json` inside `backend/`
 
 ```bash
 node index.js
+# Server runs on http://localhost:3000
 ```
-
-Server will run on `http://localhost:3000`
 
 ---
 
-### API Endpoints
+### 🔌 API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | /words | Fetch all saved words |
-| POST | /words | Save a new word |
+| `GET` | `/words` | Fetch all saved words |
+| `POST` | `/words` | Save a new word |
 
 **POST /words — Request Body:**
 
@@ -131,26 +137,24 @@ Server will run on `http://localhost:3000`
 
 ---
 
-### Flutter App Setup
+### 📱 Flutter App Setup
 
 ```bash
 cd flutter_app
 flutter pub get
 ```
 
-Update the backend URL in `lib/core/constants.dart`:
+Update `lib/core/constants.dart`:
 
 ```dart
 class AppConstants {
-  // For Android emulator
+  // Android emulator
   static const String baseUrl = 'http://10.0.2.2:3000';
 
-  // For real device — use your machine's WiFi IP
+  // Real device — use your WiFi IP
   // static const String baseUrl = 'http://192.168.1.XX:3000';
 }
 ```
-
-Run the app:
 
 ```bash
 flutter run
@@ -158,18 +162,18 @@ flutter run
 
 ---
 
-## Notes
+## ⚠️ Notes
 
-- `serviceAccountKey.json` is not committed to this repository for security reasons
-- Make sure your phone and laptop are on the same WiFi network when testing on a real device
-- Backend must be running before launching the Flutter app
+- `serviceAccountKey.json` is **not committed** for security reasons
+- Phone and laptop must be on the **same WiFi network** for real device testing
+- Backend must be **running** before launching the Flutter app
 
 ---
 
-## Built With
+## 📦 Built With
 
-- [Flutter](https://flutter.dev)
-- [Provider](https://pub.dev/packages/provider)
-- [Firebase Firestore](https://firebase.google.com/docs/firestore)
-- [Node.js](https://nodejs.org)
-- [Express](https://expressjs.com)
+<div align="center">
+
+[Flutter](https://flutter.dev) • [Provider](https://pub.dev/packages/provider) • [Firebase Firestore](https://firebase.google.com/docs/firestore) • [Node.js](https://nodejs.org) • [Express](https://expressjs.com)
+
+</div>
