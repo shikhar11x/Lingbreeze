@@ -170,6 +170,13 @@ flutter run
 
 ---
 
+## 🤖 AI Contribution
+UI Design       →  65%
+Backend Code    →  45%
+Architecture    →  Manual
+State Mgmt      →  Manual
+---
+
 ## 📦 Built With
 
 <div align="center">
