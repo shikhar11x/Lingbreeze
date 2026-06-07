@@ -14,6 +14,11 @@ A vocabulary learning app built with Flutter, Node.js, and Firebase. Users can s
 - Firebase Firestore for storage
 
 ---
+## Screenshots
+
+| Vocabulary List | Add New Word | Word Saved | Updated List |
+|----------------|--------------|------------|--------------|
+| ![Vocabulary List](preview/1.jpg) | ![Add New Word](preview/2.jpg) | ![Word Saved](preview/3.jpg) | ![Updated List](preview/4.jpg) |
 
 ## Tech Stack
 
