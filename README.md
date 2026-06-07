@@ -28,6 +28,8 @@ A vocabulary learning app built with Flutter, Node.js, and Firebase. Users can s
 ---
 
 ## Project Structure
+
+```text
 lingbreeze/
 ├── flutter_app/
 │   ├── lib/
@@ -56,7 +58,9 @@ lingbreeze/
 │   └── package.json
 ├── .gitignore
 └── README.md
+```
 
+---
 ---
 
 ## Getting Started
@@ -143,14 +147,6 @@ flutter run
 - `serviceAccountKey.json` is not committed to this repository for security reasons
 - Make sure your phone and laptop are on the same WiFi network when testing on a real device
 - Backend must be running before launching the Flutter app
-
----
-
-## AI Contribution
-UI Design:       65%
-Backend Code:    45%
-Architecture:    Manual
-State Mgmt:      Manual
 
 ---
 
